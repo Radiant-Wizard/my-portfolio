@@ -72,7 +72,7 @@ export default function About() {
                 </div>
                 <div className="flex flex-col text-center border justify-center items-center w-[40dvw]">
                     <h1 className="text-3xl font-bold text-white mb-10">MY TECH STACK</h1>
-                    <p>I am using a modern fullstack development setup combining React and Next.js for the frontend, styled with Tailwind CSS and Bootstrap. My backend is built 
+                    <p className="">I am using a modern fullstack development setup combining React and Next.js for the frontend, styled with Tailwind CSS and Bootstrap. My backend is built 
                         with Spring Boot in Java, and I manage data using PostgreSQL. This stack allows me to build responsive, performant web applications with a scalable backend and solid database integration. I also have hands-on experience with HTML, CSS, JavaScript, and core database design principles.</p>
                 </div>
             </div>

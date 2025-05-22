@@ -1,10 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import { easeInOut, motion, scale } from 'motion/react'
+import { motion} from 'motion/react'
 import { TextGenerateEffect } from './UI/TextGenerateEffect'
-import { animate } from 'motion'
 import ShinyText from './UI/shinyText'
 import BlurText from './UI/BlurText'
 
