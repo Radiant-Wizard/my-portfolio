@@ -10,20 +10,17 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
-  useEffect(() => {
-    console.log(wordsArray);
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(0.2),
-      }
-    );
-  }, [scope.current]);
+  const wordsArray = words.split(" ");
+useEffect(() => {
+  animate(
+    "span",
+    { opacity: 1 },
+    {
+      duration: 2,
+      delay: stagger(0.2),
+    }
+  );
+}, [animate, words]);
 
   const renderWords = () => {
     return (

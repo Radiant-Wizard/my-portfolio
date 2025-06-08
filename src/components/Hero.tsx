@@ -15,8 +15,6 @@ const navigation = [
 ]
 
 export default function Hero() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
     return (
         <div className="bg-black w-dvw h-dvh flex justify-center items-center flex-col overflow-hidden">
 
