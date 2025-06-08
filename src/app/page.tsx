@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Stack from "@/components/UI/Stack";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="">
         <Hero/>
         <About/>
+        <Stack/>
       </div>
     </main >
   );
