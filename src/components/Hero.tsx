@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { motion} from 'motion/react'
 import { TextGenerateEffect } from './UI/TextGenerateEffect'
 import ShinyText from './UI/shinyText'
