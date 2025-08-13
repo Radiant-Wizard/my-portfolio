@@ -1,1 +1,1 @@
-`this project is made with node v21.0.0 and npm 10.2.0`
+`This is a nextTS project made with node v21.1.0 and npm 10.2.0`
