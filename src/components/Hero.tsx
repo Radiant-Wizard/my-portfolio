@@ -45,7 +45,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl sm:text-6xl lg:text-7xl mb-6">
-            Hi, I'm <span className="text-primary">Radiant Wizard [Taratra Fanoitra]</span>
+            Hi, I&apos;m <span className="text-primary">Radiant Wizard </span>
           </h1>
           
           <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 h-8">

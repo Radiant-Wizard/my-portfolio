@@ -33,7 +33,7 @@ export function Header() {
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  })
 
   const scrollTo = (id: string) => {
     const element = document.getElementById(id)
