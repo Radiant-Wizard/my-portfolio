@@ -7,7 +7,7 @@ type ImageFallBackProps = {
   alt: string, 
   style: React.CSSProperties,
   className: string,
-  [key: string]: any
+  [key: string]: string | React.CSSProperties
 }
 
 const ERROR_IMG_SRC =
