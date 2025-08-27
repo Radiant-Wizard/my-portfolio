@@ -21,17 +21,17 @@ export function About() {
               <CardContent className="p-6">
                 <h3 className="text-xl mb-4">My Story</h3>
                 <p className="text-muted-foreground mb-4">
-                  I'm currently a second-year Computer Science student at HEI with a passion for creating innovative solutions 
+                  I&apos;m currently a second-year Computer Science student at HEI with a passion for creating innovative solutions 
                   through code. My journey started with curiosity about how technologies work, and it has evolved into a 
                   deep love for development.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  When I'm not coding, you'll find me exploring new technologies, working on my homelab server, 
+                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, working on my homelab server, 
                   or enjoying listening to Indie Musics. I believe in continuous learning and always strive to 
                   challenge myself with new projects.
                 </p>
                 <p className="text-muted-foreground">
-                  My goal is to build things that make a positive impact on people's lives while constantly 
+                  My goal is to build things that make a positive impact on people&apos;s lives while constantly 
                   improving my technical skills and understanding of software engineering best practices.
                 </p>
               </CardContent>
@@ -66,7 +66,7 @@ export function About() {
                   <p className="text-muted-foreground mb-4">Computer Science Student</p>
                   <div className="space-y-2 text-sm text-muted-foreground">
                     <p>📍 Madagascar, Antananarivo</p>
-                    <p>🎓 Haute École d'Informatique - HEI</p>
+                    <p>🎓 Haute École d&apos;Informatique - HEI</p>
                     <p>💼 Available for apprenticeship</p>
                   </div>
                 </div>

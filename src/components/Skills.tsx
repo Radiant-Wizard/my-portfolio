@@ -79,7 +79,7 @@ export function Skills() {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, []);
+  })
 
   return (
     <section id="skills" className="py-20">
