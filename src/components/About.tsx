@@ -56,8 +56,8 @@ export function About() {
               <CardContent className="p-6">
                 <div className="aspect-square mb-4 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                    alt="Alex Chen"
+                    src="/profile-img-01.jpg"
+                    alt="Taratra Fanoitra"
                     className="w-full h-full object-cover"
                   />
                 </div>
