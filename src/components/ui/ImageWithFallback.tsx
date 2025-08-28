@@ -5,9 +5,8 @@ import React, { useState } from 'react'
 type ImageFallBackProps = {
   src: string,
   alt: string, 
-  style: React.CSSProperties,
+  style?: React.CSSProperties,
   className: string,
-  [key: string]: string | React.CSSProperties
 }
 
 const ERROR_IMG_SRC =
