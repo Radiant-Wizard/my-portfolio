@@ -5,8 +5,9 @@ import React, { useState } from 'react'
 type ImageFallBackProps = {
   src: string,
   alt: string, 
-  style?: React.CSSProperties,
+  style: React.CSSProperties,
   className: string,
+  [key: string]: any
 }
 
 const ERROR_IMG_SRC =
@@ -27,7 +28,7 @@ export function ImageWithFallback(props: ImageFallBackProps) {
       style={style}
     >
       <div className="flex items-center justify-center w-full h-full">
-        <Image src={ERROR_IMG_SRC} alt="Error loading image" className='' style={style} {...rest} data-original-url={src} />
+        <Image src={ERROR_IMG_SRC} alt="Error loading image" {...rest} data-original-url={src} />
       </div>
     </div>
   ) : (
