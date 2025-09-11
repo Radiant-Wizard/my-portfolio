@@ -240,7 +240,11 @@ export function Contact() {
               <CardContent className="pt-6">
                 <div className="text-center">
                   <h4 className="mb-2">Looking for my resume?</h4>
-                  <Button variant="outline">Download Resume</Button>
+                  <Button variant="outline">
+                    <a href="/test.pdf" download="resume.pdf">
+                      Download Resume{" "}
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
