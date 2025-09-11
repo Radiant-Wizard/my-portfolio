@@ -1,52 +1,46 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Badge } from "./ui/badge"
-import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+// import { Badge } from "./ui/badge"
+import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react";
 
 export function Experience() {
   const education = [
     {
-      institution: "University of California, Berkeley",
+      institution: "Haute Ecole d'Informatique ( HEI )",
       degree: "Bachelor of Science in Computer Science",
-      period: "2023 - 2027 (Expected)",
-      location: "Berkeley, CA",
-      description: "Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Systems, Software Engineering, Web Development",
-      gpa: "3.8/4.0",
-      achievements: ["Dean's List", "CS Honor Society Member"]
-    }
-  ]
+      period: "2023 - 2026 (Expected)",
+      location: "Madagascar, Antananarivo",
+      description:
+        "Relevant coursework: Object-Oriented Programming, Database Systems, Software Engineering, Web Development, Algorithms and Data Science",
+    },
+  ];
 
   const experience = [
     {
       company: "TechStart Solutions",
       position: "Web Development Intern",
       period: "Jun 2024 - Aug 2024",
-      location: "San Francisco, CA",
-      description: "Developed responsive web applications using React and Node.js. Collaborated with senior developers to implement new features and optimize existing codebase.",
+      location: "",
+      description:
+        "Developed responsive web applications using React and Node.js. Collaborated with senior developers to implement new features and optimize existing codebase.",
       achievements: [
         "Built 3 client websites resulting in 25% increase in user engagement",
         "Optimized database queries reducing load times by 40%",
-        "Participated in Agile development process and code reviews"
-      ]
+        "Participated in Agile development process and code reviews",
+      ],
     },
-    {
-      company: "University IT Department",
-      position: "Student Technical Assistant",
-      period: "Sep 2023 - Present",
-      location: "Berkeley, CA",
-      description: "Provide technical support to students and faculty. Maintain computer labs and assist with software installations and troubleshooting.",
-      achievements: [
-        "Resolved 100+ technical support tickets with 95% satisfaction rate",
-        "Trained 10+ new student assistants on IT procedures",
-        "Implemented automated backup system for lab computers"
-      ]
-    }
-  ]
+  ];
 
-  const certifications = [
-    { name: "AWS Cloud Practitioner", issuer: "Amazon Web Services", date: "2024" },
-    { name: "React Developer Certification", issuer: "Meta", date: "2024" },
-    { name: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp", date: "2023" }
-  ]
+  //  const certifications = [
+  //    { name: "AWS Cloud Practitioner", issuer: "Amazon Web Services", date: "2024" },
+  //    { name: "React Developer Certification", issuer: "Meta", date: "2024" },
+  //{ name: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp", date: "2023" }
+  //]
 
   return (
     <section id="experience" className="py-20">
@@ -70,7 +64,9 @@ export function Experience() {
                 <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-lg">{edu.degree}</CardTitle>
-                    <CardDescription className="text-primary">{edu.institution}</CardDescription>
+                    <CardDescription className="text-primary">
+                      {edu.institution}
+                    </CardDescription>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                       <div className="flex items-center">
                         <Calendar size={14} className="mr-1" />
@@ -83,20 +79,9 @@ export function Experience() {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-4">{edu.description}</p>
-                    <div className="space-y-2">
-                      <p><strong>GPA:</strong> {edu.gpa}</p>
-                      <div>
-                        <strong>Achievements:</strong>
-                        <div className="flex flex-wrap gap-2 mt-2">
-                          {edu.achievements.map((achievement, i) => (
-                            <Badge key={i} variant="secondary">
-                              {achievement}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
+                    <p className="text-muted-foreground mb-4">
+                      {edu.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -114,7 +99,9 @@ export function Experience() {
                 <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-lg">{exp.position}</CardTitle>
-                    <CardDescription className="text-primary">{exp.company}</CardDescription>
+                    <CardDescription className="text-primary">
+                      {exp.company}
+                    </CardDescription>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                       <div className="flex items-center">
                         <Calendar size={14} className="mr-1" />
@@ -127,7 +114,9 @@ export function Experience() {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-4">{exp.description}</p>
+                    <p className="text-muted-foreground mb-4">
+                      {exp.description}
+                    </p>
                     <div>
                       <strong>Key Achievements:</strong>
                       <ul className="list-disc list-inside mt-2 space-y-1 text-muted-foreground">
@@ -144,21 +133,23 @@ export function Experience() {
         </div>
 
         {/* Certifications */}
-        <div>
+        {/* <div>
           <h3 className="text-2xl mb-6 text-center">Certifications</h3>
           <div className="grid md:grid-cols-3 gap-4">
             {certifications.map((cert, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-6">
                   <h4 className="font-semibold mb-2">{cert.name}</h4>
-                  <p className="text-muted-foreground text-sm mb-2">{cert.issuer}</p>
+                  <p className="text-muted-foreground text-sm mb-2">
+                    {cert.issuer}
+                  </p>
                   <Badge variant="outline">{cert.date}</Badge>
                 </CardContent>
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
-  )
+  );
 }

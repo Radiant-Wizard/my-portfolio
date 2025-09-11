@@ -1,53 +1,67 @@
-"use client"
+"use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import { Badge } from "./ui/badge"
-import { Button } from "./ui/button"
-import { ExternalLink, Github } from "lucide-react"
-import { ImageWithFallback } from "./ui/ImageWithFallback"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { ExternalLink, Github } from "lucide-react";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 export function Projects() {
   const projects = [
     {
       title: "Ticket Platform",
-      description: "A full-stack e-commerce ticket application built with Next, Java, and PostgreSQL. Features include user authentication, event catalog, cart, and Admin Dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      description:
+        "A full-stack e-commerce ticket application built with Next, Java, and PostgreSQL. Features include user authentication, event catalog, cart, and Admin Dashboard.",
+      image: "/vercel.svg",
+      technologies: [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe",
+        "Tailwind CSS",
+      ],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
-      featured: true
+      featured: true,
     },
     {
       title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current conditions, forecasts, and interactive maps using weather APIs.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+      description:
+        "A responsive weather dashboard that displays current conditions, forecasts, and interactive maps using weather APIs.",
+      image: "/vercel.svg",
       technologies: ["React", "Chart.js", "OpenWeather API", "Geolocation"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
-      featured: false
+      featured: false,
     },
     {
       title: "Restaurant Management Backend App",
-      description: "A working restaurant management app with siege notion with a complete OpenAPI specification.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+      description: "",
+      image: "/vercel.svg",
       technologies: ["Java", "SpringBoot", "OpenAPI", "Maven", "Lombok"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
-      featured: false
+      featured: false,
     },
     {
       title: "Weather Forecast Apache Airflow Pipeline",
-      description: "An apache weather forecast pipeline with data treatment and auto upload to cloud.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+      description: "",
+      image: "/vercel.svg",
       technologies: ["Python", "Airflow", "Google APIs", "Pandas"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
-      featured: false
+      featured: false,
     },
-  ]
+  ];
 
-  const featuredProjects = projects.filter(project => project.featured)
-  const otherProjects = projects.filter(project => !project.featured)
+  const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -55,15 +69,19 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl mb-4">Featured Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of my recent work, demonstrating my skills in front-end and back-end development but also Data Handling with python. 
+            A showcase of my recent work, demonstrating my skills in front-end
+            and back-end development but also Data Handling with python.
           </p>
         </div>
 
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video overflow-hidden">
+            <Card
+              key={index}
+              className="overflow-hidden hover:shadow-lg transition-shadow"
+            >
+              <div className="relative aspect-video overflow-hidden">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
@@ -80,20 +98,32 @@ export function Projects() {
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="outline" className="text-xs">
+                    <Badge
+                      key={techIndex}
+                      variant="outline"
+                      className="text-xs"
+                    >
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github size={16} className="mr-2" />
                       Code
                     </a>
                   </Button>
                   <Button size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ExternalLink size={16} className="mr-2" />
                       Live Demo
                     </a>
@@ -109,8 +139,11 @@ export function Projects() {
           <h3 className="text-2xl mb-8 text-center">Other Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video overflow-hidden">
+              <Card
+                key={index}
+                className="overflow-hidden hover:shadow-lg transition-shadow"
+              >
+                <div className="relative aspect-video overflow-hidden">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
@@ -119,12 +152,18 @@ export function Projects() {
                 </div>
                 <CardHeader className="pb-3">
                   <CardTitle className="text-lg">{project.title}</CardTitle>
-                  <CardDescription className="text-sm">{project.description}</CardDescription>
+                  <CardDescription className="text-sm">
+                    {project.description}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-1 mb-3">
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
+                      <Badge
+                        key={techIndex}
+                        variant="outline"
+                        className="text-xs"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -135,13 +174,26 @@ export function Projects() {
                     )}
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="flex-1"
+                      asChild
+                    >
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Github size={14} />
                       </a>
                     </Button>
                     <Button size="sm" className="flex-1" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink size={14} />
                       </a>
                     </Button>
@@ -153,5 +205,5 @@ export function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
