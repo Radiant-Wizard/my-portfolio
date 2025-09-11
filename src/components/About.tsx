@@ -66,7 +66,7 @@ export function About() {
           <div className="flex justify-center">
             <Card className="w-full max-w-md">
               <CardContent className="p-6">
-                <div className="aspect-square mb-4 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
+                <div className="relative aspect-square mb-4 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
                   <ImageWithFallback
                     src="/profile-img-01.jpg"
                     alt="Taratra Fanoitra"
