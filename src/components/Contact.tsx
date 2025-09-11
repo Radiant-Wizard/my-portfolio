@@ -28,19 +28,19 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.chen@email.com",
-      href: "mailto:alex.chen@email.com",
+      value: "https://www.linkedin.com/in/taratra-rakotomalala",
+      href: "mailto:ratsiazo.taratra@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+261 32 85 305 15",
+      href: "tel:+261328530515",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Madagascar, Antananarivo",
       href: "#",
     },
   ];
@@ -49,12 +49,12 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/alexchen",
+      href: "https://github.com/Radiant-Wizard",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/alexchen",
+      href: "https://www.linkedin.com/in/taratra-rakotomalala",
     },
   ];
 
