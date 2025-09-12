@@ -6,6 +6,7 @@ import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import { Experience } from "@/components/Experience";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Experience />
         <Contact />
       </main>
       <Footer />
