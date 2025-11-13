@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   Card,
   CardContent,
@@ -14,6 +14,14 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
 import { toast } from "sonner";
+import * as dotenv from 'dotenv'
+import emailjs from "@emailjs/browser";
+
+dotenv.config()
+
+const emailJsServiceId = process.env.EMAILJS_service_id || ""
+const emailJsPkey = process.env.EMAILJS_pkey || ""
+const emailJSTemplateID = process.env.EMAILJS_templateID || ""
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -23,7 +31,7 @@ export function Contact() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const form = useRef<HTMLFormElement>(null);
   const contactInfo = [
     {
       icon: Mail,
@@ -66,17 +74,35 @@ export function Contact() {
       [e.target.name]: e.target.value,
     });
   };
-
+  // TODO : make the submit button work
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    e.preventDefault();
+
+    if (!emailJsServiceId || !emailJsPkey || !emailJSTemplateID) {
+      toast.error("Email service configuration is missing");
       setIsSubmitting(false);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      toast.success("Message sent successfully! I'll get back to you soon.");
-    }, 2000);
+      return;
+    }
+
+    emailjs
+      .sendForm(emailJsServiceId, emailJSTemplateID, form.current as HTMLFormElement, {
+        publicKey: emailJsPkey,
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          toast.success("Message sent successfully!");
+          setFormData({ name: "", email: "", subject: "", message: "" });
+          setIsSubmitting(false);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("Failed to send message. Please try again.");
+          setIsSubmitting(false);
+        },
+      );
   };
 
   return (
@@ -101,7 +127,7 @@ export function Contact() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} ref={form} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
