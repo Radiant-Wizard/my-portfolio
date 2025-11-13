@@ -17,11 +17,10 @@ import { toast } from "sonner";
 import * as dotenv from 'dotenv'
 import emailjs from "@emailjs/browser";
 
-dotenv.config()
 
-const emailJsServiceId = process.env.EMAILJS_service_id || ""
-const emailJsPkey = process.env.EMAILJS_pkey || ""
-const emailJSTemplateID = process.env.EMAILJS_templateID || ""
+const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_service_id || ""
+const emailJSTemplateID = process.env.NEXT_PUBLIC_EMAILJS_templateID || ""
+const emailJsPkey = process.env.NEXT_PUBLIC_EMAILJS_pkey || ""
 
 export function Contact() {
   const [formData, setFormData] = useState({
