@@ -266,7 +266,7 @@ export function Contact() {
                 <div className="text-center">
                   <h4 className="mb-2">Looking for my resume?</h4>
                   <Button variant="outline">
-                    <a href="/test.pdf" download="resume.pdf">
+                    <a href="/cv-taratra-v1.pdf" download="taratra-fanoitra-resume.pdf">
                       Download Resume{" "}
                     </a>
                   </Button>
