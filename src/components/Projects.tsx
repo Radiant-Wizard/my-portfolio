@@ -13,6 +13,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 export function Projects() {
+  // TODO : Add background pictures to the cards
   const projects = [
     {
       title: "Ticket Platform",
@@ -31,21 +32,21 @@ export function Projects() {
       featured: true,
     },
     {
-      title: "Weather Dashboard",
+      title: "STREAMLIT - PROJECT MANAGER",
       description:
-        "A responsive weather dashboard that displays current conditions, forecasts, and interactive maps using weather APIs.",
+        "A python streamlit app that manage project from excel template to make an interactive dashboard",
       image: "/vercel.svg",
-      technologies: ["React", "Chart.js", "OpenWeather API", "Geolocation"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      technologies: ["streamlit", "Sqlite", "Python", "Pandas"],
+      githubUrl: "https://github.com/Radiant-Wizard/PROJECT_MANAGER",
+      liveUrl: "",
       featured: false,
     },
     {
       title: "Restaurant Management Backend App",
-      description: "",
+      description: "An API rest for the management of a restaurant",
       image: "/vercel.svg",
       technologies: ["Java", "SpringBoot", "OpenAPI", "Maven", "Lombok"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/Radiant-Wizard/Resto-Management-PROG3",
       liveUrl: "https://example.com",
       featured: false,
     },
@@ -54,7 +55,7 @@ export function Projects() {
       description: "",
       image: "/vercel.svg",
       technologies: ["Python", "Airflow", "Google APIs", "Pandas"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/Radiant-Wizard/AIRFLOW-WEATHER-FETCHING-ETL",
       liveUrl: "https://example.com",
       featured: false,
     },
