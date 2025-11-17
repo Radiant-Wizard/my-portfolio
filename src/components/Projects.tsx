@@ -27,7 +27,7 @@ export function Projects() {
         "Stripe",
         "Tailwind CSS",
       ],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/Radiant-Wizard/Tapakila-hub/blob/main/README.md",
       liveUrl: "https://example.com",
       featured: true,
     },
