@@ -35,7 +35,7 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "https://www.linkedin.com/in/taratra-rakotomalala",
+      value: "ratsiazo.taratra@gmail.com",
       href: "mailto:ratsiazo.taratra@gmail.com",
     },
     {
