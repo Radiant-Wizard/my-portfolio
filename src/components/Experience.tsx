@@ -22,25 +22,19 @@ export function Experience() {
 
   const experience = [
     {
-      company: "TechStart Solutions",
-      position: "Web Development Intern",
-      period: "Jun 2024 - Aug 2024",
+      company: "Looking for my first experience",
+      position: "Student / Aspiring Intern",
+      period: "Currently seeking an alternance",
       location: "",
       description:
-        "Developed responsive web applications using React and Node.js. Collaborated with senior developers to implement new features and optimize existing codebase.",
+        "I am a motivated student eager to gain practical experience in the field. I am looking for my first professional opportunity to apply my skills and learn in a real-world environment.",
       achievements: [
-        "Built 3 client websites resulting in 25% increase in user engagement",
-        "Optimized database queries reducing load times by 40%",
-        "Participated in Agile development process and code reviews",
+        "Currently developing foundational skills in Java, Python, Typescript and SQL",
+        "Participating in personal projects and coursework to strengthen practical knowledge",
+        "Eager to contribute, learn, and grow in a professional team setting",
       ],
     },
   ];
-
-  //  const certifications = [
-  //    { name: "AWS Cloud Practitioner", issuer: "Amazon Web Services", date: "2024" },
-  //    { name: "React Developer Certification", issuer: "Meta", date: "2024" },
-  //{ name: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp", date: "2023" }
-  //]
 
   return (
     <section id="experience" className="py-20">

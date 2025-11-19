@@ -29,7 +29,7 @@ export function About() {
               <CardContent className="p-6">
                 <h3 className="text-xl mb-4">My Story</h3>
                 <p className="text-muted-foreground mb-4">
-                  I&apos;m currently a second-year Computer Science student at
+                  I&apos;m currently a third-year Computer Science student at
                   HEI with a passion for creating innovative solutions through
                   code. My journey started with curiosity about how technologies
                   work, and it has evolved into a deep love for development.
