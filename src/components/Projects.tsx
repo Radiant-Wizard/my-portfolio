@@ -13,13 +13,12 @@ import { ExternalLink, Github } from "lucide-react";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 export function Projects() {
-  // TODO : Add background pictures to the cards
   const projects = [
     {
       title: "Ticket Platform",
       description:
         "A full-stack e-commerce ticket application built with Next, Java, and PostgreSQL. Features include user authentication, event catalog, cart, and Admin Dashboard.",
-      image: "/vercel.svg",
+      image: "/tapakila.png",
       technologies: [
         "React",
         "Node.js",
@@ -28,35 +27,31 @@ export function Projects() {
         "Tailwind CSS",
       ],
       githubUrl: "https://github.com/Radiant-Wizard/Tapakila-hub/blob/main/README.md",
-      liveUrl: "https://example.com",
       featured: true,
     },
     {
       title: "STREAMLIT - PROJECT MANAGER",
       description:
         "A python streamlit app that manage project from excel template to make an interactive dashboard",
-      image: "/vercel.svg",
+      image: "/python.png",
       technologies: ["streamlit", "Sqlite", "Python", "Pandas"],
       githubUrl: "https://github.com/Radiant-Wizard/PROJECT_MANAGER",
-      liveUrl: "",
       featured: false,
     },
     {
       title: "Restaurant Management Backend App",
       description: "An API rest for the management of a restaurant",
-      image: "/vercel.svg",
+      image: "/resto-mngt.png",
       technologies: ["Java", "SpringBoot", "OpenAPI", "Maven", "Lombok"],
-      githubUrl: "https://github.com/Radiant-Wizard/Resto-Management-PROG3",
-      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/Radiant-Wizard/Spring-Resto-Mngt",
       featured: false,
     },
     {
       title: "Weather Forecast Apache Airflow Pipeline",
       description: "",
-      image: "/vercel.svg",
+      image: "/airflow.png",
       technologies: ["Python", "Airflow", "Google APIs", "Pandas"],
       githubUrl: "https://github.com/Radiant-Wizard/AIRFLOW-WEATHER-FETCHING-ETL",
-      liveUrl: "https://example.com",
       featured: false,
     },
   ];
@@ -119,16 +114,6 @@ export function Projects() {
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" asChild>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink size={16} className="mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -187,15 +172,6 @@ export function Projects() {
                         rel="noopener noreferrer"
                       >
                         <Github size={14} />
-                      </a>
-                    </Button>
-                    <Button size="sm" className="flex-1" asChild>
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink size={14} />
                       </a>
                     </Button>
                   </div>
