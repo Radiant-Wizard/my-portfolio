@@ -26,7 +26,8 @@ export function Projects() {
         "Stripe",
         "Tailwind CSS",
       ],
-      githubUrl: "https://github.com/Radiant-Wizard/Tapakila-hub/blob/main/README.md",
+      githubUrl:
+        "https://github.com/Radiant-Wizard/Tapakila-hub/blob/main/README.md",
       featured: true,
     },
     {
@@ -48,10 +49,12 @@ export function Projects() {
     },
     {
       title: "Weather Forecast Apache Airflow Pipeline",
-      description: "",
+      description:
+        "A complete apache airflow pipeline that fetches weather API datas, upload them to Google Drive and send them to looker studio",
       image: "/airflow.png",
       technologies: ["Python", "Airflow", "Google APIs", "Pandas"],
-      githubUrl: "https://github.com/Radiant-Wizard/AIRFLOW-WEATHER-FETCHING-ETL",
+      githubUrl:
+        "https://github.com/Radiant-Wizard/AIRFLOW-WEATHER-FETCHING-ETL",
       featured: false,
     },
   ];
