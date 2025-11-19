@@ -58,7 +58,7 @@ export function Hero() {
 
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             A passionate computer science student specializing in building
-            exceptional digital experiences. Currently in my second year,
+            exceptional digital experiences. Currently in my third year,
             exploring the endless possibilities of technology.
           </p>
 
