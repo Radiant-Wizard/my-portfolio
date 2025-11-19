@@ -86,7 +86,7 @@ export function Experience() {
           <div>
             <h3 className="text-2xl mb-6 flex items-center">
               <Briefcase className="mr-2" size={24} />
-              Work Experience
+              Experience
             </h3>
             <div className="space-y-6">
               {experience.map((exp, index) => (
