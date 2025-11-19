@@ -39,8 +39,8 @@ export function Skills() {
       skills: [
         { name: "Git/GitHub", level: 85 },
         { name: "Docker", level: 60 },
-        { name: "AWS", level: 55 },
-        { name: "Linux", level: 70 },
+        { name: "AWS", level: 40 },
+        { name: "Linux", level: 80 },
       ],
     },
   ];
