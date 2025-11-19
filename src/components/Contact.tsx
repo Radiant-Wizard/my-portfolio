@@ -61,7 +61,7 @@ export function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/taratra-rakotomalala",
+      href: "https://www.linkedin.com/in/rakotomalala-taratra",
     },
   ];
 
