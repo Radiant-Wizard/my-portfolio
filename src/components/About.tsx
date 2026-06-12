@@ -1,7 +1,6 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
-import { Briefcase, GraduationCap, MapPin } from "lucide-react";
 
 export function About() {
   const interests = [
@@ -81,17 +80,16 @@ export function About() {
                     Computer Science Student
                   </p>
                   <div className="space-y-2 text-sm text-muted-foreground">
-                    <p>
+                    <p className="before:content-['\f276'] before:font-['Font_Awesome_6_Free'] before:font-black before:mr-2">
                       {" "}
-                      <MapPin /> Madagascar, Antananarivo
+                      Madagascar, Antananarivo
                     </p>
-                    <p>
+                    <p className="before:content-['\f549'] before:font-['Font_Awesome_6_Free'] before:font-black before:mr-2">
                       {" "}
-                      <GraduationCap /> Haute École d&apos;Informatique - HEI
+                       Haute École d&apos;Informatique - HEI
                     </p>
-                    <p>
-                      {" "}
-                      <Briefcase /> Currently{" "}
+                    <p className="before:content-['\f0b1'] before:font-['Font_Awesome_6_Free'] before:font-black before:mr-2">
+                       Currently in an Internship
                     </p>
                   </div>
                 </div>
