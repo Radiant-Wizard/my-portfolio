@@ -51,7 +51,6 @@ export function Header() {
             <span className="text-xl font-semibold text-primary">Radiant Wizard</span>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <button
@@ -66,7 +65,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="sm"
@@ -77,7 +75,6 @@ export function Header() {
           </Button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-3">
