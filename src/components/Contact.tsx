@@ -12,7 +12,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin,Send, CircleUser, GitBranch } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
@@ -53,13 +53,13 @@ export function Contact() {
   ];
 
   const socialLinks = [
-    {
-      icon: Github,
+      {
+        icon: GitBranch,
       label: "GitHub",
       href: "https://github.com/Radiant-Wizard",
     },
     {
-      icon: Linkedin,
+      icon: CircleUser,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/rakotomalala-taratra",
     },

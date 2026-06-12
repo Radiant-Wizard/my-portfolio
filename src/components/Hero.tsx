@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import { ChevronDown, CircleUser, GitBranch, Mail } from "lucide-react";
 import { motion } from "motion/react";
 
 export function Hero() {
@@ -83,7 +83,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors p-2"
             >
-              <Github size={24} />
+              <GitBranch size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/rakotomalala-taratra"
@@ -91,7 +91,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors p-2"
             >
-              <Linkedin size={24} />
+              <CircleUser size={24} />
             </a>
             <a
               href="mailto:ratsiazo.taratra@gmail.com"
@@ -113,4 +113,3 @@ export function Hero() {
     </section>
   );
 }
-

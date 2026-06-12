@@ -9,7 +9,7 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import {  Github } from "lucide-react";
+import {  GitBranch } from "lucide-react";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
 import { featuredProjects, otherProjects } from "@/types";
 
@@ -65,7 +65,7 @@ export function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Github size={16} className="mr-2" />
+                      <GitBranch size={16} className="mr-2" />
                       Code
                     </a>
                   </Button>
@@ -125,7 +125,7 @@ export function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Github size={14} />
+                        <GitBranch size={14} />
                       </a>
                     </Button>
                   </div>
