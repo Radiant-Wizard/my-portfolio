@@ -14,7 +14,6 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
 import { toast } from "sonner";
-import * as dotenv from 'dotenv'
 import emailjs from "@emailjs/browser";
 
 
@@ -31,6 +30,7 @@ export function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useRef<HTMLFormElement>(null);
+
   const contactInfo = [
     {
       icon: Mail,
@@ -73,7 +73,6 @@ export function Contact() {
       [e.target.name]: e.target.value,
     });
   };
-  // TODO : make the submit button work
   const handleSubmit = async (e: React.FormEvent) => {
     setIsSubmitting(true);
 
@@ -116,7 +115,6 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <Card>
             <CardHeader>
               <CardTitle>Send Me a Message</CardTitle>
@@ -196,7 +194,6 @@ export function Contact() {
             </CardContent>
           </Card>
 
-          {/* Contact Information */}
           <div className="space-y-8">
             <Card>
               <CardHeader>

@@ -9,63 +9,13 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Progress } from "./ui/progress";
+import { skillCategories, tools, frameworks, languages } from "@/types";
 
 export function Skills() {
   const [animatedValues, setAnimatedValues] = useState<
     Record<string, number>
   >({});
 
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      skills: [
-        { name: "React/Next.js", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "Tailwind CSS", level: 85 },
-      ],
-    },
-    {
-      title: "Backend Development",
-      skills: [
-        {name: "Java", level: 85},
-        {name: "SpringBoot", level: 90},
-        { name: "Node.js", level: 70 },
-        { name: "PostgreSQL", level: 70 },
-      ],
-    },
-    {
-      title: "Tools & Technologies",
-      skills: [
-        { name: "Git/GitHub", level: 85 },
-        { name: "Docker", level: 60 },
-        { name: "AWS", level: 40 },
-        { name: "Linux", level: 80 },
-      ],
-    },
-  ];
-
-  const languages = [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Java",
-    "SQL",
-  ];
-  const frameworks = [
-    "React",
-    "Next.js",
-    "Express",
-    "Tailwind CSS",
-    "Bootstrap",
-  ];
-  const tools = [
-    "Git",
-    "Docker",
-    "VS Code",
-    "Figma",
-    "Postman",
-  ];
 
   useEffect(() => {
     const timer = setTimeout(() => {

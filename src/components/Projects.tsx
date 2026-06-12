@@ -9,58 +9,11 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import {  Github } from "lucide-react";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
+import { featuredProjects, otherProjects } from "@/types";
 
 export function Projects() {
-  const projects = [
-    {
-      title: "Ticket Platform",
-      description:
-        "A full-stack e-commerce ticket application built with Next, Java, and PostgreSQL. Features include user authentication, event catalog, cart, and Admin Dashboard.",
-      image: "/tapakila.png",
-      technologies: [
-        "React",
-        "Node.js",
-        "PostgreSQL",
-        "Stripe",
-        "Tailwind CSS",
-      ],
-      githubUrl:
-        "https://github.com/Radiant-Wizard/Tapakila-hub/blob/main/README.md",
-      featured: true,
-    },
-    {
-      title: "STREAMLIT - PROJECT MANAGER",
-      description:
-        "A python streamlit app that manage project from excel template to make an interactive dashboard",
-      image: "/python.png",
-      technologies: ["streamlit", "Sqlite", "Python", "Pandas"],
-      githubUrl: "https://github.com/Radiant-Wizard/PROJECT_MANAGER",
-      featured: false,
-    },
-    {
-      title: "Restaurant Management Backend App",
-      description: "An API rest for the management of a restaurant",
-      image: "/resto-mngt.png",
-      technologies: ["Java", "SpringBoot", "OpenAPI", "Maven", "Lombok"],
-      githubUrl: "https://github.com/Radiant-Wizard/Spring-Resto-Mngt",
-      featured: false,
-    },
-    {
-      title: "Weather Forecast Apache Airflow Pipeline",
-      description:
-        "A complete apache airflow pipeline that fetches weather API datas, upload them to Google Drive and send them to looker studio",
-      image: "/airflow.png",
-      technologies: ["Python", "Airflow", "Google APIs", "Pandas"],
-      githubUrl:
-        "https://github.com/Radiant-Wizard/AIRFLOW-WEATHER-FETCHING-ETL",
-      featured: false,
-    },
-  ];
-
-  const featuredProjects = projects.filter((project) => project.featured);
-  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -73,7 +26,6 @@ export function Projects() {
           </p>
         </div>
 
-        {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
             <Card
@@ -123,7 +75,6 @@ export function Projects() {
           ))}
         </div>
 
-        {/* Other Projects */}
         <div>
           <h3 className="text-2xl mb-8 text-center">Other Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

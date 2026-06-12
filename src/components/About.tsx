@@ -1,6 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
+import { Briefcase, GraduationCap, MapPin } from "lucide-react";
 
 export function About() {
   const interests = [
@@ -36,9 +37,10 @@ export function About() {
                 </p>
                 <p className="text-muted-foreground mb-4">
                   When I&apos;m not coding, you&apos;ll find me exploring new
-                  technologies, working on my homelab server, or enjoying
-                  listening to Indie Musics. I believe in continuous learning
-                  and always strive to challenge myself with new projects.
+                  technologies, working on my homelab, or enjoying listening to
+                  Indie Musics while making 2D Indie game. I believe in
+                  continuous learning and always strive to challenge myself with
+                  new projects.
                 </p>
                 <p className="text-muted-foreground">
                   My goal is to build things that make a positive impact on
@@ -79,9 +81,18 @@ export function About() {
                     Computer Science Student
                   </p>
                   <div className="space-y-2 text-sm text-muted-foreground">
-                    <p>📍 Madagascar, Antananarivo</p>
-                    <p>🎓 Haute École d&apos;Informatique - HEI</p>
-                    <p>💼 Available for apprenticeship</p>
+                    <p>
+                      {" "}
+                      <MapPin /> Madagascar, Antananarivo
+                    </p>
+                    <p>
+                      {" "}
+                      <GraduationCap /> Haute École d&apos;Informatique - HEI
+                    </p>
+                    <p>
+                      {" "}
+                      <Briefcase /> Currently{" "}
+                    </p>
                   </div>
                 </div>
               </CardContent>
