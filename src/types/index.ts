@@ -61,19 +61,22 @@ export const education = [
 ];
 
 export const experience = [
-  {
-    company: "Software Overseas Academy",
-    position: "Student / Intern",
-    period: "Currently working in alternance",
-    location: "",
-    description:
-      "I am currently working at Software Overseas Academy as an intern",
-    achievements: [
-      "Currently accumulating experience as a junior developer",
-      "Participating in SOA's projects ",
-    ],
-  },
-];
+    {
+      company: "Software Overseas Academy",
+      position: "Apprentice Web Developer",
+      period: "January 2026 – Present",
+      location: "",
+      description:
+        "Currently working as an Apprentice Web Developer, contributing to the development, maintenance, testing, and improvement of web applications.",
+
+      achievements: [
+        "Participated in the migration of two web applications (Drupal to WordPress and legacy React to modern Next.js with TypeScript).",
+        "Contributed to improving the security of backend modules.",
+        "Performed functional testing and wrote technical documentation.",
+        "Developed and maintained front-end features for web applications.",
+      ],
+    },
+]
 
 export const skillCategories = [
   {

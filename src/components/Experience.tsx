@@ -5,36 +5,10 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-// import { Badge } from "./ui/badge"
 import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react";
+import { education, experience  } from "@/types";
 
 export function Experience() {
-  const education = [
-    {
-      institution: "Haute Ecole d'Informatique ( HEI )",
-      degree: "Bachelor of Science in Computer Science",
-      period: "2023 - 2026 (Expected)",
-      location: "Madagascar, Antananarivo",
-      description:
-        "Relevant coursework: Object-Oriented Programming, Database Systems, Software Engineering, Web Development, Algorithms and Data Science",
-    },
-  ];
-
-  const experience = [
-    {
-      company: "Looking for my first experience",
-      position: "Student / Aspiring Intern",
-      period: "Currently seeking an alternance",
-      location: "",
-      description:
-        "I am a motivated student eager to gain practical experience in the field. I am looking for my first professional opportunity to apply my skills and learn in a real-world environment.",
-      achievements: [
-        "Currently developing foundational skills in Java, Python, Typescript and SQL",
-        "Participating in personal projects and coursework to strengthen practical knowledge",
-        "Eager to contribute, learn, and grow in a professional team setting",
-      ],
-    },
-  ];
 
   return (
     <section id="experience" className="py-20">
@@ -126,23 +100,6 @@ export function Experience() {
           </div>
         </div>
 
-        {/* Certifications */}
-        {/* <div>
-          <h3 className="text-2xl mb-6 text-center">Certifications</h3>
-          <div className="grid md:grid-cols-3 gap-4">
-            {certifications.map((cert, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold mb-2">{cert.name}</h4>
-                  <p className="text-muted-foreground text-sm mb-2">
-                    {cert.issuer}
-                  </p>
-                  <Badge variant="outline">{cert.date}</Badge>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

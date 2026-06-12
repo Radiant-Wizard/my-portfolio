@@ -1,3 +1,5 @@
+import { SmileIcon } from "lucide-react";
+
 export function Footer() {
   return (
     <footer className="bg-muted/50 border-t border-border py-8">
@@ -8,7 +10,7 @@ export function Footer() {
             Next.js, and Tailwind CSS.
           </p>
           <p className="text-muted-foreground text-sm mt-2">
-            Designed and developed with love ;)
+            Designed and developed with love <SmileIcon />
           </p>
         </div>
       </div>
